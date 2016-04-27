@@ -1,7 +1,8 @@
 # widow_arm_teleop
-Teleoperation of WidowX arm using arbotix_gui
+Teleoperation of Trossen WidowX arm using arbotix_gui
 
-Use roslaunch widow_arm_teleop widow_arm_teleop.launch
+Usage: roslaunch widow_arm_teleop widow_arm_teleop.launch
+In another terminal: arbotix_gui
 
 Some quirks:
 If the arbotix_gui does not seem to be working, open an arbotix_terminal and run ls
