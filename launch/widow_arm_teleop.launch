@@ -1,0 +1,19 @@
+<launch>
+    <param name="use_sim_time" value="false" />
+
+    <arg name="port" default="/dev/ttyUSB0" />
+
+    <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+      <rosparam file="$(find widow_arm_teleop)/config/manager.yaml" command="load" />
+    </node>
+
+    <node name="gripper_controller" pkg="arbotix_controllers" type="gripper_controller">
+        <rosparam>
+            model: singlesided
+            invert: true
+            pad_width: 0.0254
+            joint: gripper_joint
+        </rosparam>
+    </node>
+</launch>
+
