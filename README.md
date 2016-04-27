@@ -1,5 +1,7 @@
 # widow_arm_teleop
-Teleoperation of Trossen WidowX arm using arbotix_gui
+ROS Package for tele-operation of Trossen WidowX arm using arbotix_gui
+
+Put these files in the /src of a catkin workspace
 
 Usage: roslaunch widow_arm_teleop widow_arm_teleop.launch
 In another terminal: arbotix_gui
