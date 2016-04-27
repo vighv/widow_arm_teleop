@@ -6,5 +6,7 @@ In another terminal: arbotix_gui
 
 Some quirks:
 If the arbotix_gui does not seem to be working, open an arbotix_terminal and run ls
+
 Seems to establish communication to the board in the roslaunch terminal
+
 After that, operate away!
